@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="login.css">
+<title>1차 논리를 이용한 보험 손해사정 자동화 시스템</title></head>
+<body>
+<div class="login-page">
+  <div class="form">
+    <!--<form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form class="login-form">
+      <input type="text" placeholder="username"/>
+      <input type="password" placeholder="password"/>-->
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Login</button>
+      <!--<p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>-->
+  </div>
+</div>
+</body>
+</html>
